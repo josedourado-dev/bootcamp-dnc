@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Meu Formulário</h1>
+    <form action="https://formspree.io/f/mnqkzjvv" method="post">
+        <label>Digite seu nome: </label>
+       <input type="text" placeholder="Nome" required value=""  name="nome">
+       <label>Digite seu Email: </label>
+       <input type="email" placeholder="Email" required value=""  name="email"><br><br>
+       <label>Digite sua Mensagem: </label><br><br>
+       <textarea rows="5" cols="15" placeholder="Digite sua Mensagem" required name="Mensagem" ></textarea><br><br>
+       
+       <p>
+        <label>Escolha os esportes que você pratica:</label><br>
+        <ul>
+            <li><input checked value="SIM" name="Box" type="checkbox">Box</li>
+            <li><input value="SIM" name="Futebol" type="checkbox">Futebol</li>
+            <li><input value="SIM" name="Jiu-Jitso" type="checkbox">Jiu-Jitso</li>
+            <li><input value="SIM" name="Krav-Maga" type="checkbox">Krav-Maga</li>
+            
+        </ul>
+        <input value="SIM" name="TermosDoContrato" type="checkbox">
+        <label>Eu aceito os termos de uso do site</label><br><br>
+       </p>
+       <p>
+        <label>Escolha sua cor favorita</label>
+        <ul>
+            <li><input type="radio"  value="Azul" name="corFavorita">Azul</li>
+            <li><input type="radio"  value="Verde" name="corFavorita">Verde</li>
+            <li><input type="radio"  value="Vermelho" name="corFavorita">Vermelho</li>
+            <li><input type="radio"  value="Amarelo" name="corFavorita">Amarelo</li>
+        </ul>
+       </p>
+       <p>
+        <label>Escolha sua Cidade</label>
+        <select>
+            <option  value="RJ">Rio de Janeiro</option>
+            <option value="SP">São Paulo</option>
+            <option selected value="SSA">Salvador</option>
+        </select>
+       </p>
+       <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
